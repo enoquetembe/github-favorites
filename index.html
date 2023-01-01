@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Github favorites</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+        <h1>Github favorites</h1>
+        <div class="search">
+          <label class="sr-only" for="input-search">Github user</label>
+          <input type="search" id="input-search" placeholder="Github user">
+          <button>&plus;</button>
+        </div>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Repositories</th>
+          <th>Followers</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="user">
+            <img src="https://github.com/enoquetembe.png" alt="enoque's photo">
+            <a href="https://github.com/enoquetembe" target="_blank">
+              <p>Enoque Tembe</p>
+              <span>enoquetembe</span>
+            </a>
+          </td>
+          <td class="repositories"> 19</td>
+          <td class="followers"> 19</td>
+          <td> <button class="remove">&times;</button> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>

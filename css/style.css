@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff: 'Poppins', sans-serif;
+  --text-black-900: #303030;
+  --bg-blue-100: hsla(194, 100%, 63%);
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--text-black-900);
+  background-color:azure;
+}
+
+body * {
+  font-family: var(--ff);
+}
+
+.sr-only  {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2.5rem 0;
+}
+.search{
+  display: flex;
+  align-items: center;
+}
+
+#input-search {
+  height: 3.2rem;
+  padding: 0 .8rem;
+  border: 1px solid #ccc;
+  border-radius: .4rem 0 0 .4rem;
+}
+
+.search button {
+  background-color: var(--bg-blue-100);
+  border-radius: 0 .4rem .4rem 0;
+  border: none;
+  height: 3.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--text-black-900);
+}
+
+table th {
+  background-color: var(--bg-blue-100);
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem;
+}
+table tr {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+table td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+table td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+table td.user a {
+  text-decoration: none;
+}
+
+table td.user a p {
+  font-weight: bold;
+}
+
+table td .remove {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+table td .remove:hover {
+  transform: scale(1.5);
+}
